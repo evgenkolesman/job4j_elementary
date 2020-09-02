@@ -1,6 +1,6 @@
 package ru.job4j;
 
-public class ru.job4j.Multiple. {
+public class rujob4jMultiple {
     public static void main(String[] args) {
         System.out.println("1*1=1");
         System.out.println("1*2=2");
@@ -11,4 +11,4 @@ public class ru.job4j.Multiple. {
         System.out.println("1*7=7");
 
         }
-        }
+}
