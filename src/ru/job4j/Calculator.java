@@ -12,7 +12,6 @@ public class Calculator {
         int fiveMinusTwo = five - two;
         int sixDivTwo = six / two;
         int fourTimeTwo = 4 * 2;
-
         System.out.println(sixDivTwo);
         System.out.println(fiveMinusTwo);
         System.out.println(fourTimeTwo);

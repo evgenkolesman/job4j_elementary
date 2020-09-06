@@ -12,7 +12,6 @@ public class Converter {
         return rsl;
     }
 
-
     public static void main(String[] args) {
         int in = 140;
         int expected = 2;
