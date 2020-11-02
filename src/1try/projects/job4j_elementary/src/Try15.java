@@ -1,13 +1,13 @@
-package projects.job4j_elementary.src.1try.*;
+package projects.job4j_elementary.src;
 //классы из этого файла входят в указанный пакет
 import java.time.*;
 // операторы import следуют после оператора package
-// class Employee {
+public class Try15 {
     private String name;
     private double salary;
     private LocalDate hireDay;
 
-    public Employee(String n, double s, int year, int month, int day) {
+    public Try15(String n, double s, int year, int month, int day) {
         name = n;
         salary = s;
         hireDay = LocalDate.of(year, month, day);

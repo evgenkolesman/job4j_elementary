@@ -11,7 +11,7 @@ public class Try10 {
 
         // поднять всем работникам зарплату на 5%
         for (Employee e: staff)
-            e.raiseSallary (5);
+            e.raiseSalary (5);
         //вывести данные об объектах типа Employee
         for (Employee e:staff)
             System.out.println("Имя = " + e.getName()+ ", Зарплата = "+
