@@ -1,38 +1,36 @@
 public class TRYJOB4J {
-    public static void main ()
+    public static void calculate  (int [] week)
     {
-        int [] week = new week [7] ;
-        week [0] = 1;
-        week [1] = 2;
-        week [2] = 3;
-        week [3] = 4;
-        week [4] = 5;
-        week [5] = 6;
-        week [6] = 7;
+        weekHours [] week  = new weekHours[7];
+        for week [int x] = 1;
+        x++;
 
-        int h;
-        int s;
+        int n = week [];
+    }
+}
 
-        if (week [] <= 5)
-         {
+class weekHours {
+    int h;
+    int s;
+    int n;
+        if (n <= 5)
+    {
 
-             if (h<= 8)
-             {
-                 s = h*10;
-             }
-             if (h>8)
-             {
-                 s = h*10 + (h-8)*15;
-             }
-         }
+        if (h<= 8)
+        {
+            s = h*10;
+        }
+        if (h>8)
+        {
+            s = h*10 + (h-8)*15;
+        }
+    }
          else if (h<= 8) {
-            {
-                s = h * 10 * 2;
-            }
-            if (h > 8) {
-                s = (h * 10 + (h - 8) * 15) * 2;
-            }
-
+        {
+            s = h * 10 * 2;
+        }
+        if (h > 8) {
+            s = (h * 10 + (h - 8) * 15) * 2;
         }
     }
 }
