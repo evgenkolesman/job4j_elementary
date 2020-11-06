@@ -1,6 +1,46 @@
 
 public class WeeklySalary {
+
     public static int calculate(int[] hours) {
+
+        int salary = 0;
+
+        for (int i = 0; i < hours.length; i++) {
+            int salaryPerDay = getSalaryFromDay(hours[i], i);
+            if (i <= 4) {
+                salary = salary + salaryPerDay;
+            } else {
+                salaryPerDay = salaryPerDay * 2;
+                salary = salary + salaryPerDay;
+            }
+        }
+    }
+
+
+    private static int getSalaryFromDay(int hoursPerDay, int salaryPerDay) {
+        int hoursInOneDay;
+        if (hoursInOneDay<=8)
+        {
+            salaryPerDay = hoursPerDay * 10;
+        }
+        if (hoursInOneDay > 8)
+        {
+            int additionalHours = hoursInOneDay - 8;
+            int additionalHoursSalary = additionalHours * 15;
+            salaryPerDay = 8 * 10 + additionalHoursSalary;
+        }
+        else return salaryPerDay;
+    }
+}
+
+
+
+
+
+
+
+
+    /*public static int calculate(int[] hours) {
 
         int salary = 0;
 
@@ -35,7 +75,7 @@ public class WeeklySalary {
 
     }
 
-}
+}*/
 
 
 
