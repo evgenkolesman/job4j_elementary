@@ -1,14 +1,12 @@
-
 public class WeeklySalary
 {
     public static int calculate(int[] hours)
     {
-
         int salary =0;
 
-        for (int i=0; i < hours.length; i++)
+        for (int i=0; i<hours.length; i++)
         {
-            int salaryPerDay = getSalaryFromDay(hours [i],i);
+            int salaryPerDay =getSalaryFromDay(hours[i],i);
             if (i<=4)
             {
                 salary=salary+salaryPerDay;
@@ -19,22 +17,27 @@ public class WeeklySalary
                 salary = salary+salaryPerDay;
             }
         }
+        return salary;
     }
 
 
-    private static int getSalaryFromDay (int hoursPerDay, int salaryPerDay)
+    private static int getSalaryFromDay (int hoursInOneDay, int salaryPerDay )
     {
-        if (int hoursInOneDay<=8)
+
+        if (hoursInOneDay<=8)
         {
-            return salaryPerDay=hoursPerDay*10;
+
+            salaryPerDay=hoursInOneDay*10;
         }
-        if (hoursInOneDay<8)
+        else
         {
             int additionalHours=hoursInOneDay-8;
             int additionalHoursSalary = additionalHours*15;
-            return salaryPerDay =8*10+additionalHoursSalary;
+            salaryPerDay =80+additionalHoursSalary;
         }
-        else return salaryPerDay;
+
+
+        return salaryPerDay;
     }
 }
 
@@ -43,23 +46,20 @@ public class WeeklySalary
 
 
 
-
-
     /*public static int calculate(int[] hours) {
 
-        int salary = 0;
+            int res = 0;
+            for (int i = 0; i < hours.length; i++) {
+                int hour = hours[i];
+                int  money = hour > 8 ? ((hour - 8) * 15 + 80) : hour * 10;
 
-        for (int i = 0; i=hours.length; i++)
-        {
-            int salaryPerDay =getSalaryFromDay(hours[i], i);
-            if (i<= 4) {
-                salary = salary + salaryPerDay;
-            } else {
-                salaryPerDay = salaryPerDay * 2;
-                salary = salary + salaryPerDay;
+                if (i >= 5) {
+                    money *= 2;
+                }
+                res += money;
             }
+            return res;
         }
-    }
 
 
 
@@ -209,6 +209,3 @@ public class WeeklySalary
       }
 
      */
-     */
-     */
-**/
