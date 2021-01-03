@@ -33,9 +33,9 @@ public class CopyOfTest
     {// бесполезно
         Object [] newArray = new Object[newLength];
         System.arraycopy(
-                a,0,newArray,0, Math.min(a.length, newLength);
+                a,0,newArray,0, Math.min(a.length, newLength));
                 return  newArray;
-        );
+
     }
     /* Этот метод наращивает массивб выделяя новый массив
     того же типа и копируя в него все прежние элементы
@@ -47,11 +47,11 @@ public class CopyOfTest
     public static Object goodCopyOf (Object a, int newLength)
     {
         Class cl = a.getClass();
-        if ( !cl.isArray() return null;
+        if ( !cl.isArray()) return null;
         Class componentType= cl.getComponentType();
         int length = Array.getLength(a);
         Object newArray= Array.newInstance (componentType,newLength);
-        System.arraycopy(A,0,newArray,0, Math.min(length,newLength));
-        return newArray;)
+        System.arraycopy(a,0,newArray,0, Math.min(length,newLength));
+        return newArray;
     }
 }
