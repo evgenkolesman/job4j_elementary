@@ -33,5 +33,8 @@ public class Employee implements Comparable<Employee>
         {
             return Double.compare(salary, other.salary);
         }
+
+        public void setHireDay(int i, int i1, int i2) {
+        }
     }
 
