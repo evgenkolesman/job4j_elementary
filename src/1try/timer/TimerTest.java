@@ -1,4 +1,5 @@
 package timer;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
@@ -9,13 +10,11 @@ import javax.swing.Timer;
 //конфликта имен с классом java.util.Timer
 
 
-
-
 public class TimerTest
 {
     public static void main (String[]args)
     {
-    ActionListener listener = new TimePrinter();
+    ActionListener listener = new TimePrinter ();
     //построить таймер который вызывает приемник каждые 10 секунд
     Timer t = new Timer(10000, listener);
     t.start();
@@ -24,9 +23,3 @@ public class TimerTest
     }
 }
 
-public class TimePrinter implements ActionListener {
-    public void actionPerformed(ActionEvent event) {
-        System.out.println("At the tone, the time is " + new Date());
-        Toolkit.getDefaultToolkit().beep();
-    }
-}
