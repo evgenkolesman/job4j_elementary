@@ -16,11 +16,11 @@ public class LambdaTest
         System.out.println("Отсортированно в афавитной последовательности:");
         Arrays.sort(planets);
         System.out.println(Arrays.toString(planets));
-        System.out.println("Отсортировано по длинне: ");
+        System.out.println("Отсортировано по длине: ");
         Arrays.sort(planets, (first, second) -> first.length()-second.length());
         System.out.println(Arrays.toString(planets));
 
-        Timer t= new Timer(100000, event ->
+        Timer t= new Timer(1000, event ->
                 System.out.println("Время: "+ new Date()));
         t.start();
         //выполнять программу до тех пор пока пользовательне кликнет "ОК"
