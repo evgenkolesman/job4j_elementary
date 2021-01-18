@@ -1,7 +1,5 @@
 package innerClass;
 
-import timer.TimePrinter;
-
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
@@ -15,7 +13,7 @@ public class InnerClassTest
 {
     public static void main (String [] args)
     {
-        TalkingClock clock=new TalkingClock (1000,true);
+        TalkingClock clock=new TalkingClock(1000,true);
         clock.start();
         //выполняем программу пока  пользователь не щелкнет по кнопке "Ок"
         JOptionPane.showMessageDialog(null, "Закрыть программу?");
