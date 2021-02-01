@@ -1,6 +1,7 @@
 package generics;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class GenericUsage {
@@ -9,6 +10,7 @@ public class GenericUsage {
         list.add("first");
         list.add("second");
         list.add("third");
+        list.add(new Person("name", 21, new Date(913716000000L));
         for (int i = 0; i < list.size(); i++) {
             String s = (String) list.get(i);
             System.out.println("Текущий элемент: " + s);
