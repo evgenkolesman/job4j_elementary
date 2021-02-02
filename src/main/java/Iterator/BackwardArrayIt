@@ -1,6 +1,6 @@
 package Iterator;
 
-import sun.security.util.ArrayUtil;
+
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
@@ -25,6 +25,6 @@ public class BackwardArrayIt implements Iterator<Integer> {
         if (!hasNext()) {
             throw new NoSuchElementException();
         }
-        return arraysS(data);
+        return data[point++];
     }
 }
