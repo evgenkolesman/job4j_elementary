@@ -1,0 +1,15 @@
+package 1try.loop;
+
+public class SecondSum {
+    public static int count(int a, int b)
+    {
+        int rsl = 0;
+        int [] ar= new int [b];
+        int res = ar[rsl];
+        while (rsl==0||rsl%2==0) {
+            res=res+ar[rsl];
+            rsl=rsl+1;
+        }
+        return res;
+    }
+}
